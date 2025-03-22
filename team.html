@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Hierarchy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            padding: 8px 0;
+            color: black;
+            cursor: pointer;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 8px;
+        }
+        .sidebar ul li a:hover, .sidebar ul li a:focus {
+            font-weight: bold;
+            color: #E74C3C;
+            border-bottom: 2px solid #E74C3C;
+        }
+
+        .main-content {
+            flex: 1;
+            padding-left: 40px;
+        }
+        .team-section {
+            display: none;
+        }
+        .team-section:target {
+            display: block;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Team</h2>
+            <ul>
+                <li><a href="#core-team">Core Team</a></li>
+                <li><a href="#ghar">Ghar</a></li>
+                <li><a href="#residential-programme">Residential Programme</a></li>
+                <li><a href="#people-culture">People and Culture</a></li>
+                <li><a href="#placements">Placements</a></li>
+                <li><a href="#operations">Operations</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#lxd-etc">LXD & ETC</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div id="core-team" class="team-section">
+                <h2>Core Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://gratitude-network.org/wp-content/uploads/2023/06/Nidhi-headshot-1-200x300.jpg" alt="Nidhi Anarkat">
+                        <h3>Nidhi Anarkat</h3>
+                        <p>CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGkTP4CNVPnPQ/profile-displayphoto-shrink_800_800/B4DZP5s8dkGkAc-/0/1735061130361?e=1747872000&v=beta&t=_YzjbY8ysNEAipeKSrfGEpe7D0bNZc6CFArndbmRqwY" alt="Prachi B Shah">
+                        <h3>Prachi B Shah</h3>
+                        <p>Head</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQFbTsdA0Sxgbg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516296997636?e=1747872000&v=beta&t=NXQaQcTi6bmKULtcu2UNt_J1KnGJAUdYswUY9u9_lUs" alt="Balakrishnan Chettythody">
+                        <h3>Balakrishnan Chettythody</h3>
+                        <p>Director Of Residential</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGBmqlqjHlayg/profile-displayphoto-shrink_200_200/B56ZOI6wHSHYAY-/0/1733168925395?e=2147483647&v=beta&t=8rwdeMarwZqZLqK4ZLUwlV783vmMgWKemwHncahTcL0" alt="Abhishek Gupta">
+                        <h3>Abhishek Gupta</h3>
+                        <p>Co-Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ghar" class="team-section">
+                <h2>Ghar</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://shorturl.at/Ag8JF" alt="Varsha">
+                        <h3>Varsha</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/XFpdQ" alt="Goldy">
+                        <h3>Goldy</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/v5FdQ" alt="Jyoti Sharma">
+                        <h3>Jyoti Sharma</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/WbZp0" alt="Md Nasir">
+                        <h3>Md Nasir</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/rCyJ1" alt="Ujjwal Kumar">
+                        <h3>Ujjwal Kumar</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/Bw7DR" alt="Pooja Singh">
+                        <h3>Pooja Singh</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/KgR7L" alt="Kajal Yadav">
+                        <h3>Kajal Yadav</h3>
+                        <p>Backend Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="residential-programme" class="team-section">
+                <h2>Residential Programme</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGSrryNi-E1Sw/profile-displayphoto-shrink_800_800/B4DZTwLQEVHAAc-/0/1739196270371?e=1747872000&v=beta&t=m1_2L_D0Qjt0igQB4GWpPxqx-L7J_ijFLJIlTAgGwMw" alt="Priyanka Dangwal">
+                        <h3>Priyanka Dangwal</h3>
+                        <p>Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/mAZVB" alt="Sumati Bagharatta">
+                        <h3>Sumati Bagharatta</h3>
+                        <p>Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/wgslt" alt="Tulika Verma">
+                        <h3>Tulika Verma</h3>
+                        <p>Head</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQH0yELEv6ehEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709999968253?e=1747872000&v=beta&t=Brp2TB-bj29fsZm3QB6Cm1CjceSo9uMMDovSvGkVm_0" alt="Sudiksha Yadav">
+                        <h3>Sudiksha Yadav</h3>
+                        <p>Graphic Design Academic Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/HH55n" alt="Shivani Suji">
+                        <h3>Shivani Suji</h3>
+                        <p>Program Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/FUHm9" alt="Nilam Yadav">
+                        <h3>Nilam Yadav</h3>
+                        <p>Assistant Manager</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="people-culture" class="team-section">
+                <h2>People and Culture</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Neha Pandit</h3>
+                        <p>PnC</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Tripti Bisen</h3>
+                        <p>PnC</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Samiksha Neware</h3>
+                        <p>Life Skill Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Sakshi Gangwar</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Bilqees Jan</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Nandita</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Rina Dhamane</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Aanista Malik</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Karuna Lakra</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Pooja Mahanor</h3>
+                        <p>Senior Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Aarzoo Jolly</h3>
+                        <p>Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Ashwini Nagnath Mathpati</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Pranjali Reddy B</h3>
+                        <p>HR Ops</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Siddharth Roy">
+                        <h3>Prerna Pandurang Guhe</h3>
+                        <p>Culture Associate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="placements" class="team-section">
+                <h2>Placements</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://shorturl.at/44xd0" alt="Gulfiza">
+                        <h3>Gulfiza</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/3FuEt" alt="Sikha Gupta">
+                        <h3>Sikha Gupta</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/t23V4" alt="Rupa Jha">
+                        <h3>Rupa Jha</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEQzDU4jXdzFA/profile-displayphoto-shrink_200_200/B56ZOrKhbaGcAY-/0/1733743483090?e=2147483647&v=beta&t=E5GTxsi5x9kG_D1uTk2zbWbXT3JCvgr2DqZRqdgOoSQ" alt="Surabhi Jain">
+                        <h3>Surabhi Jain</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="operations" class="team-section">
+                <h2>Operations</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://shorturl.at/Gt1Vi" alt="Anjali Tayade">
+                        <h3>Anjali Tayade</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/coqmn" alt="Shweta Deshmukh">
+                        <h3>Shweta Deshmukh</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/BvP4j" alt="Hari Om">
+                        <h3>Hari Om</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/9cVOw" alt="Sarika Narwade">
+                        <h3>Sarika Narwade</h3>
+                        <p>Jr.Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/SmLbM" alt="Pradeep Thakur">
+                        <h3>Pradeep Thakur</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/IYPyv" alt="Pooja Rani">
+                        <h3>Pooja Rani</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/mqvpz" alt="Anindita Ghosh">
+                        <h3>Anindita Ghosh</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/cI3Q8" alt="Rahul Bauddha">
+                        <h3>Rahul Bauddha</h3>
+                        <p>Ops Associate</p>
+                    </div>
+                </div>
+            </div>
+            <div id="academics" class="team-section">
+                <h2>Academics</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Vikas Patel</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Awrul Anjali</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Anjali Singh</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>H.Sai Jyothi</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Madhukar Prasad</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Sania Parween</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Sreelekha Bheemisetti</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Dipali Hole</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Pooja Sonune</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Rajkumar</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Sangeeta</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Shreshta</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Shweta Jumde</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Sanjana Gadekar</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Swati Kapgate</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Shruti Navhat</h3>
+                        <p>Associate</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Nisha Chouhan</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Meenakshi Gupta</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Dewangana Deshmukh</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Tanuja Khose</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Hongyo Themshingla</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Sajan</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Shivani Malviya</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Vikas Pandey">
+                        <h3>Anshika Tripathi</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/142087181?v=4" alt="Rishav Tiwari">
+                        <h3>Rishav Tiwari</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/MPZwh" alt="Pooja Palkandwar">
+                        <h3>Pooja Palkandwar</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/0VChZ" alt="Mahima Dhomane">
+                        <h3>Mahima Dhomane</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/DuWha" alt="Anzum Praveen">
+                        <h3>Anzum Praveen</h3>
+                        <p>Associate</p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="admissions" class="team-section">
+                <h2>Admissions</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://shorturl.at/MxGCh" alt="Ameesha Adivasi">
+                        <h3>Ameesha Adivasi</h3>
+                        <p>Intern</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1V6nUbg1TCw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711028307897?e=1747872000&v=beta&t=U0KKktiKvvtU11K9Rg2Tbmd1g9GUV1vknTxpzkJL1EQ" alt="Debalina Datta">
+                        <h3>Debalina Datta</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/iWvnz" alt="Pihu Gupta">
+                        <h3>Pihu Gupta</h3>
+                        <p>Associate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://shorturl.at/7mh2I" alt="Santosh Mourya">
+                        <h3>Santosh maurya</h3>
+                        <p>Associate</p>
+                    </div>
+                </div>
+            </div>
+            <div id="lxd-etc" class="team-section">
+                <h2>LXD & ETC</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://shorturl.at/KSScV" alt="Bhawana Sharma">
+                        <h3>Bhawana Sharma</h3>
+                        <p>Associate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

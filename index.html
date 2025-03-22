@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navgurukul Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ng.css">
 </head>
 <body>
 
+    <!-- Sticky Navbar -->
     <nav class="navbar">
         <div class="container">
-            <h2>Navgurukul</h2>
+            <img src="data:image/png;base64,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" alt="">
             <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#schools">Schools</a></li>
@@ -19,14 +20,197 @@
             </ul>
         </div>
     </nav>
-    <div class="about">
-        <h1>
-            The Gurukul for the New Age India and its New Generation
-        </h1>
-        <h4>
-            We are a non-profit dedicated to bring affordable tech education to underprivileged girls in India.
-        </h4>
+
+    <div class="about" id="about">
+        <h1>The <span style="color: orange;">Gurukul</span> for the <span style="text-decoration: underline;">New age India</span> and its New Generation</h1>
+        <h4>We are a non-profit dedicated to bringing affordable tech education to underprivileged girls in India.</h4>
     </div>
+    <div class="photo">
+        <img src="https://img.freepik.com/free-photo/friends-learning-study-group_23-2149257236.jpg?t=st=1742647965~exp=1742651565~hmac=7457cfa5ad3e16161797b6877048b59aba62d0456af2d33b89cb2693b23d0cc7&w=996" alt="A group of girls">
+    </div>
+    <div class="info">
+        <div class="info-column">
+            <h1>890+
+                <p>Students placed across various industries in tech</p>
+            </h1>
+        </div>
+        <div class="info-column">
+            <h1>2.8 LPA
+                <p>avg.salary secured by the students, the highest being 8 LPA</p>
+            </h1>
+        </div>
+        <div class="info-column">
+            <h1>95%
+                <p>of our students strenght consists of girls from marginalized communities</p>
+            </h1>
+        </div>
+        <div class="info-column">
+            <h1>23+ Crore
+                <p>collectively earned annually by our alumni</p>
+            </h1>
+        </div>
+    </div>
+    <div class="img-title">
+        <h1>Our Schools</h1>
+    </div>
+    <div class="school-img">
+        <div class="school">
+            <img src="https://img.freepik.com/free-photo/side-shot-code-editor-using-react-js_181624-61842.jpg?t=st=1742648993~exp=1742652593~hmac=463b883126e8c8e487a600f4356580375e2fa7143e5895c34964aae33d4d9232&w=996" alt="">
+            <h1>School of Programming
+                <p>Fully-funded course in software engineering with graranteed jobs</p>
+            </h1>
+        </div>
+        <div class="school">
+            <img src="https://img.freepik.com/free-photo/medium-shot-smiley-women-with-tablet_23-2148942587.jpg?t=st=1742649416~exp=1742653016~hmac=733525589b7fb4dde5eb69893554279c0e9520d3cd346a3e681ca611670c8f16&w=996" alt="">
+            <h1>School of Second Chances
+                <p>Fully funded sourses for trauma-survivors</p>
+            </h1>
+        </div>
+        <div class="school">
+            <img src="https://img.freepik.com/free-photo/pretty-brunette-girl-blue-shirt-sitting-table-office-she-is-typing-laptop-looks-happy_197531-25024.jpg?t=st=1742649491~exp=1742653091~hmac=81532ebee99c31a7c4b38dafc8cb1019e6c617210ffaf92c13b163864fe99bd4&w=996" alt="">
+            <h1>School of Business
+                <p>Fully funded course in Business CRM with granteed jobs</p>
+            </h1>
+        </div>
+        <div class="school">
+            <img src="https://img.freepik.com/free-photo/two-latin-women-sitting-cafe-table-with-laptop-computer-discussing-work_662251-899.jpg?t=st=1742649545~exp=1742653145~hmac=fc665f53a1fe06091f2f764800e02c6ffb37222820ee5846dfdab2270d91782c&w=740" alt="">
+            <h1>School of Finance
+                <p>Fully funded course in finance with granteed jobs</p>
+            </h1>
+        </div>
+    </div>
+    <div class="digital-initiatives">
+        <h1>Digital Initiatives</h1>
+    </div>
+    <div class="digital-img">
+        <div class="initiatives">
+            <img src="https://zuvy.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg_0289.fd3070e1.png&w=3840&q=75" alt="">
+            <h1>Zuvy
+                <p>Get started on tech education with affordable degree programs</p>
+                <link rel="stylesheet" href="">
+            </h1>
+        </div>
+        <div class="initiatives">
+            <img src="https://play-lh.googleusercontent.com/DPrkRGtPJ7ZQmmivdq1uvmC--zBGk3FeU2u2_qzz2vU8TlKGyFQwWLIf8GVRo-jY4j_L" alt="">
+            <h1>Meraki
+                <p>Get started with programming in python English and Typing at the comfort of your home and for free</p>
+                <link rel="stylesheet" href="">
+            </h1>
+        </div>
+        <div class="initiatives">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAwCAYAAAClvqwiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK1SURBVHgB7Zm9b9NAFMDf2U5pRRBGZaJLELSAhKDMDDgNMLdiQUzuBGMX2m60W6iQKANMiCR/Ad1gaIgLf0AiFqQWRBgYkSwE4iOxjzunaev6/Fmi+uN+kmXL7xwlv5yf7z0DcDgcDofD4XAOj4XrW48XlQ8FSAEIIrJQ2qyQy1WytZHRKZa1C23WuHvXXle+dz/Zzg0Lo/Di3e1Zt89mXXNQTuVu1h5p45pbXIII7Eqg4AIWcw0yM5gyvvx6pX793bCdGxtW6M5VBOuagzJ28saGV1yAkNgl9KEypAokmMAzYk5pykfE/EtyqDiCGLeRacxCggkkwpIg5RuAYdIR7ElwzRFJwVdEXCSM5i7pZ47OPIGoiNDyCnuKiNNMQCDqz9/eWoIB4Zoss3A77IUpImsSKA4RWZRAsYnIqgTKjghPCQCtNEugWE8NPwl/jB/FVe2KDilGSooEDIZ85+rT0Mt4OXd+45lWqvqNIzNCJrd/l12GRq5N/z/fOu9lsqkQkov5u3RX9RsnrGqn9b+GVMTAWHmRWUJnC501kHKsZOkrQzzWTEsDxo2dp4anjN2eQwFSiq3WoDLmlM/FIbHbIOlhX/L0bsAMmqhFVw6PtIKMcxRdcZVxKEVXFm8T1+ozazI8+xFxzhlRmJ/aeoCQ9TtkE+Nax/y51l8s+jZv0zIzyDuYJpGwRA6nyaYICFX2rpECdbH7MkjKWnNG4y/j/tSmyq6oYXJIGFHpYeB2PpXxsH52BgOuOaPxbucLwKyjLBBIl7fHhGOlPqE6ZNBehdFNZjsfGSfoLrQIik1GAho2SGDd0tsx3ItFEkGxZCBYTkLDprw+rpFEubz/PCJ/ZvnNRLV3PGAWaaJi0P8CQa8xEdZX6udc/9kgzJc+TiMwFcDCcSQQCevuL4U5HA6Hw+FwgvIPH2OUlxXAugUAAAAASUVORK5CYII=" alt="">
+            <h1>Code India Fellowship
+                <p>Nature programming skills in the next generation of India's youth with your expertise</p>
+                <link rel="stylesheet" href="">
+            </h1>
+        </div>
+    </div>
+    <div class="campuses-title">
+        <h1>Our Campuses</h1>
+    </div>
+    <div class="campus">
+        <div class="campus-img">
+            <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2023/02/Himachal-Pradesh-in-March-1.webp?fit=1920%2C1080&ssl=1" alt="">
+            <h1>Himachal</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTihzKtZkF_B_18dN4lyQLqnAAT-xPH4xNGA&s" alt="">
+            <h1>Kishanganj</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://swaroopvilas.com/system/images/udaipur-tourist%20-destination-1.jpg" alt="">
+            <h1>Udaipur</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://bastariya.com/wp-content/uploads/2017/09/Dantewada-Bastar-Chhattisgarh-2.jpg" alt="">
+            <h1>Dantewada</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA4VZWdVCUNDidaYE3hJzJxk3_o_O7JcQjlQ&s" alt="">
+            <h1>Raipur</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://images.bhaskarassets.com/thumb/1200x900/web2images/521/2020/12/08/orig_8jashpur-pullout-pg1-0_1607448076.jpg" alt="">
+            <h1>Jashpur</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://mediaim.expedia.com/destination/1/c9040b24c15b5bc39668ab557c8e1bb5.jpg" alt="">
+            <h1>Dharmshala</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://static.toiimg.com/thumb/111093785.cms?resizemode=4&width=400" alt="">
+            <h1>Sarjapur</h1>
+        </div>
+        <div class="campus-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pune_West_skyline_-_March_2017.jpg/800px-Pune_West_skyline_-_March_2017.jpg" alt="">
+            <h1>Pune</h1>
+        </div>
+    </div>
+    <div class="key">
+        <h1>Key Facilities at NavGurukul</h1>
+    </div>
+    <div class="facility">
+        <div class="facility-img">
+            <img src="https://media.istockphoto.com/id/1162391345/vector/cafe.jpg?s=612x612&w=0&k=20&c=8HEN6W6l9Gx_7gZ-nfVDfBrxSlN3E1h7GH5Z7CBPJkI=" alt="">
+        </div>
+        <div class ="facility-points">
+            <ul>
+                <li>All expenses are pain by Navgurukul and free for the students</li>
+                <li>Equipped with shared dorms,fully functional kitchen and other amenities of daily use</li>
+                <li>Classrooms and large residential spaces</li>
+                <li>Provision of laptop, internet, mentors, english classe, mental health counselling</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Navgurukul. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">LinkedIn</a>
+            </p>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="who">Who are we</a></li>
+                        <li><a href="team">Team</a></li>
+                        <li><a href="blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>SCHOOLS</h3>
+                    <ul>
+                        <li><a href="#">School of Programming</a></li>
+                        <li><a href="#">School of Design</a></li>
+                        <li><a href="#">School of Business</a></li>
+                        <li><a href="#">School of Finance</a></li>
+                        <li><a href="#">School of Second Chance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>DIGITAL INITIATIVE</h3>
+                    <ul>
+                        <li><a href="#">Zuvy</a></li>
+                        <li><a href="#">Meraki</a></li>
+                        <li><a href="#">Code India Fellowship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>GET INVOLVED</h3>
+                    <ul>
+                        <li><a href="#">Be a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
